@@ -1,0 +1,157 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #333;	
+}
+a:link, a:active, a:visited{ /*efeitos sobre os links */
+	color: #315e8a;
+	text-decoration: none;
+}
+a:hover{ /*efeito quando o mouse passar pelos links*/
+	text-decoration: underline;
+}
+.linha{ /* layout em grid de 960px; colunas de 60x com espaço de 10px */
+	width: 960px; /* largura total */
+	margin: 0 auto; /*centralizado*/
+	overflow: auto; /*gerenciar conteúdo automaticamente*/
+	padding: 5px 0; /*espaçamento em cima e em baixo */
+}
+.coluna{
+	padding: 0 10px; /* espaçamento direita e esquerda */
+	float: left;/* colunas flutuando à esquerda */
+}
+.col1{ /*largura individual da coluna + os 20 de espaçamento */
+	width: 60px;
+}
+.col2{ /*largura de 80 na 2º coluna mais a largura da primeira */
+	width: 140px;
+}
+.col3{
+	width: 220px;
+}
+.col4{
+	width: 300px;
+}
+.col5{
+	width: 380px;
+}
+.col6{
+	width: 460px;
+}
+.col7{
+	width: 540px;
+}
+.col8{
+	width: 620px;
+}
+.col9{
+	width: 700px;
+}
+.col10{
+	width: 780px;
+}
+.col11{
+	width: 860px;
+}
+.col12{ /* mais de 10 de cada lado para fechar os 960 */
+	width: 940px;
+
+}
+/* estilos reutilizáveis */
+.sem-padding{
+	padding: 0 !important;
+}
+.sem-margin{
+	margin: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500; /* peso do negrito da fonte */
+	margin:  15px 0 10px 0;
+}
+
+ul li, ol li {
+	margin-bottom: 5px;
+}
+
+ul.inline li, ol.inline li{ /* todas as listas com a classe inline, mostrar na mesma linha */
+	display: inline;
+	margin-right:  15px; /*espaçamento entre os itens da lista*/
+}
+
+ul.inline li:last-child, ol.inline li:last-child {
+	margin-right:  0;
+}
+
+ul.sem-marcador, ol.sem-marcador{
+	list-style: none; /* remover marcadores das listas */
+}
+a.botao, input.botao { /*botões */
+	background: #1f3c58;
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #ebebeb;
+	cursor: pointer;
+	margin: 5px 0;
+	display: inline-block;
+	border: none;
+}
+
+a.botao:hover, input.botao:hover{
+	background: #315e8a;
+	text-decoration: none;
+}
+img{ /* ajuste das imagens dentro do conteiner */
+	max-width: 100%;
+	height: auto;	
+}
+/* layout do site */
+.header{
+	background: #dee3e6;
+}
+h1.logo{
+	font-weight: 300;
+	color: #315e8a;
+	letter-spacing: -2px;
+}
+
+.footer{
+	background: #1f3c58;
+	color: #ebebeb;
+	padding: 20px 0;
+	text-align: center;
+	font-weight: 100;
+}
+
+.menu{ /*estilo do menu*/
+	text-transform: uppercase;
+	text-align: right;
+	margin-top: 25px;
+}
+
+.menu li a{ /*estilo do menu*/
+	padding: 5px 10px;
+	border-radius: 3px;	
+}
+.menu li a:hover{ /*efeito no menu com o mouse sobre o campo*/
+	text-decoration: none; /*remover sublinhados */
+	background: #1f3c58;
+	color: #ebebeb;
+}
+
+.contato label{
+	display: block;
+	font-size: 13px;
+	font-weight: 300;
+}
+.contato input, .contato textarea{
+	display: block; /* dispor um em cada linha*/
+	margin-bottom: 15px;
+	padding: 5px 2%;
+	width: 96%
+}
+.contato textarea{
+	height: 150px
+}
+.contato input.botao{
+	width: auto;
+}
